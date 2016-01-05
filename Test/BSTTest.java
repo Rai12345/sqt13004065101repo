@@ -33,5 +33,13 @@ public class BSTTest {
 		assertTrue(bst.search(3)==3);
 		
 	}
+	@Test
+	public void deleateTest(){
+		bst.insert(54);
+		TestCase.assertTrue(bst.deleteNode(54)==54);
+		 
+		TestCase.assertTrue(bst.deleteNode(54)==-1);
+		
+	}
 
 }
