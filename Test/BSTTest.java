@@ -24,5 +24,14 @@ public class BSTTest {
 		bst.insert(32);
 		assertFalse(bst.isEmpty());
 	}
+	@Test
+	public void insertTest(){
+		bst.insert(3);
+		bst.insert(32);
+		assertTrue(bst.search(32)==32);
+
+		assertTrue(bst.search(3)==3);
+		
+	}
 
 }
