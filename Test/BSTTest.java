@@ -18,5 +18,11 @@ public class BSTTest {
 		BST b = new BST();
 		assertNotNull(b);
 	}
+	@Test
+	public void isEmpty(){
+		assertTrue(bst.isEmpty());
+		bst.insert(32);
+		assertFalse(bst.isEmpty());
+	}
 
 }
