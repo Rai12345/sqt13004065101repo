@@ -13,5 +13,10 @@ public class BSTTest {
      public void initilize(){
     	 bst  =  new BST();
      }
+	@Test
+	public void initTest(){
+		BST b = new BST();
+		assertNotNull(b);
+	}
 
 }
