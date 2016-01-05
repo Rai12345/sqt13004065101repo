@@ -41,5 +41,18 @@ public class BSTTest {
 		TestCase.assertTrue(bst.deleteNode(54)==-1);
 		
 	}
+	@Test
+	public void searchTest(){
+		bst.insert(3);
+		assertTrue(bst.search(3)==3);
+		bst.insert(54);
+		bst.insert(321);
+
+		assertTrue(bst.search(54)==54);
+		assertTrue(bst.search(321)==321);
+		assertTrue(bst.search(7)==-1);
+		
+		
+	}
 
 }
